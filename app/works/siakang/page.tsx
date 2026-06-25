@@ -44,7 +44,7 @@ export default function SiAkangPage() {
               </div>
               <div className="flex flex-col">
                 <span className="text-brand-orange text-sm md:text-base font-normal mb-2 opacity-70 uppercase tracking-widest">
-                  Client
+                  For
                 </span>
                 <span className="text-brand-orange text-xl md:text-2xl font-medium leading-tight">
                   Educational Banking Institution
