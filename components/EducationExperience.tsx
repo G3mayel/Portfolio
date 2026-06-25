@@ -108,12 +108,14 @@ export function EducationExperience() {
                     <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 opacity-0 group-hover:opacity-100 transform -translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300" />
                   </h3>
                 </div>
+                <div className="flex flex-col items-start sm:items-end mt-4 sm:mt-0">
                 <span className="text-lg md:text-xl font-medium text-brand-cream/80 mt-4 sm:mt-0 text-left sm:text-right">
                   Wellmagic Media Digital
                 </span>
                 <span className="text-sm font-regular opacity-70">
                     Level: Competent
                   </span>
+                  </div>
               </a>
             </FadeUp>
             

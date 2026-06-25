@@ -47,7 +47,7 @@ export default function EksKulinePage() {
                   For
                 </span>
                 <span className="text-brand-orange text-xl md:text-2xl font-medium leading-tight">
-                  Official Acceleration Program
+                  SMK Negri 4 Tangerang
                 </span>
               </div>
               <div className="flex flex-col">
@@ -66,12 +66,13 @@ export default function EksKulinePage() {
 
       <section className="w-full px-6 md:px-12 mb-20 md:mb-32">
         <FadeUp delay={0.3}>
-          <div className="w-full relative aspect-[16/9] md:aspect-[21/9] bg-gray-200">
+          <div className="w-full relative bg-gray-200">
             <Image draggable={false}
               src="/images/ekskuline.png"
               alt="Eks-Kuline Hero Interface"
-              fill
-              className="object-cover"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-contain"
               referrerPolicy="no-referrer"
             />
           </div>

@@ -35,6 +35,7 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
       }, 500);
       return () => clearTimeout(t);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   const navigate = (href: string) => {
@@ -71,13 +72,6 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
 
     setTimeout(() => {
       router.push(href);
-      
-      setTimeout(() => {
-        setIsTransitioning((prev) => {
-          if (prev) return false;
-          return prev;
-        });
-      }, 10000);
     }, 850);
   };
 

@@ -10,7 +10,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "SARPRASKU",
-    role: "Product Design & Development",
+    role: "UI Design & Development",
     year: "2026",
     image: "/images/sarprasku.png",
     slug: "sarprasku",
@@ -18,15 +18,15 @@ export const projects: Project[] = [
   },
   {
     title: "CNPLUS",
-    role: "Frontend Development",
+    role: "UI Design & Frontend Development",
     year: "2025",
     image: "/images/cnplus.png",
     slug: "cnplus",
-    category: ["Development"],
+    category: ["Design", "Development"],
   },
   {
     title: "CNERSIA",
-    role: "Product Design & Development",
+    role: "UI Design & Frontend Development",
     year: "2025",
     image: "/images/cnersia.png",
     slug: "cnersia",
@@ -42,18 +42,18 @@ export const projects: Project[] = [
   },
   {
     title: "KASKUY",
-    role: "Frontend Development",
+    role: "UI Design & Frontend Development",
     year: "2025",
     image: "/images/kaskuy.png",
     slug: "kaskuy",
-    category: ["Development"],
+    category: ["Design", "Development"],
   },
   {
     title: "EKS-KULINE",
-    role: "Frontend Development",
+    role: "UI Design & Frontend Development",
     year: "2024",
     image: "/images/ekskuline.png",
     slug: "eks-kuline",
-    category: ["Development"],
+    category: ["Design", "Development"],
   },
 ];

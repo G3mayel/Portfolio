@@ -11,6 +11,7 @@ export function Hero() {
               src="/images/circle.svg"
               alt=""
               fill
+              sizes="150px"
               priority
               className="absolute inset-0 object-fill pointer-events-none"
             />

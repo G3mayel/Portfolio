@@ -8,6 +8,7 @@ export function CustomCursor() {
   const [isClicked, setIsClicked] = useState(false);
   const [isOverOrange, setIsOverOrange] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
+  const [hasMoved, setHasMoved] = useState(false);
 
   const mouseX = useMotionValue(-100);
   const mouseY = useMotionValue(-100);
@@ -24,10 +25,14 @@ export function CustomCursor() {
   const bigYOffset = useTransform(bigY, (v) => v - 16);
   const smallXOffset = useTransform(smallX, (v) => v - 4);
   const smallYOffset = useTransform(smallY, (v) => v - 4);
-  const isHiddenState = isHidden || mouseX.get() === -100;
+  const isHiddenState = isHidden || !hasMoved;
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
+      setHasMoved((prev) => {
+        if (!prev) return true;
+        return prev;
+      });
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
 
@@ -85,7 +90,7 @@ export function CustomCursor() {
         }}
         animate={{
           scale: isClicked ? 0.7 : isHovering ? 1.5 : 1,
-          opacity: isHidden ? 0 : 1,
+          opacity: isHiddenState ? 0 : 1,
         }}
         transition={{
           type: "spring",
@@ -104,7 +109,7 @@ export function CustomCursor() {
         }}
         animate={{
           scale: isClicked ? 0.3 : 1,
-          opacity: isHidden ? 0 : 1,
+          opacity: isHiddenState ? 0 : 1,
         }}
         transition={{
           type: "spring",

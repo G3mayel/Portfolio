@@ -26,14 +26,15 @@ export function ProjectGallery({ images }: ProjectGalleryProps) {
   return (
     <section className="w-full px-6 md:px-12 py-20 md:py-32 flex flex-col gap-6 md:gap-8 bg-brand-bg">
       <FadeUp>
-        <div className="w-full relative aspect-[16/10] md:aspect-[21/9] bg-gray-200 overflow-hidden">
+        <div className="w-full relative aspect-[4/3] md:aspect-[16/9] bg-gray-200 overflow-hidden rounded-lg">
           {images.map((img, idx) => (
             <Image draggable={false}
               key={img}
               src={img}
               alt={`Gallery image ${idx + 1}`}
               fill
-              className={`object-cover transition-opacity duration-1000 ${
+              sizes="(max-width: 1024px) 100vw, 80vw"
+              className={`object-contain transition-opacity duration-1000 ${
                 idx === activeIndex ? "opacity-100" : "opacity-0"
               }`}
               referrerPolicy="no-referrer"
@@ -62,6 +63,7 @@ export function ProjectGallery({ images }: ProjectGalleryProps) {
                   src={img}
                   alt={`Gallery thumbnail ${idx + 1}`}
                   fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className={`object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                     idx === activeIndex ? "scale-100" : "group-hover:scale-[1.02]"
                   }`}
