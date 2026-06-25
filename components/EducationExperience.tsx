@@ -94,7 +94,7 @@ export function EducationExperience() {
           <div className="lg:w-2/3 flex flex-col w-full">
             <FadeUp delay={0.1}>
               <a
-                href="/images/certificates/dicoding-frontend.jpg"
+                href="https://drive.google.com/file/d/1oUrsNcm-C77PBw4eq5bTU0ZS1kG9vEHp/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex flex-col sm:flex-row justify-between items-start sm:items-center pb-8 border-b border-brand-cream/30 hover:border-brand-cream transition-colors duration-300 mb-8 sm:mb-0 sm:pb-8"
@@ -111,12 +111,15 @@ export function EducationExperience() {
                 <span className="text-lg md:text-xl font-medium text-brand-cream/80 mt-4 sm:mt-0 text-left sm:text-right">
                   Wellmagic Media Digital
                 </span>
+                <span className="text-sm font-regular opacity-70">
+                    Level: Competent
+                  </span>
               </a>
             </FadeUp>
             
             <FadeUp delay={0.2}>
               <a
-                href="/images/certificates/fcc-responsive.jpg"
+                href="https://drive.google.com/file/d/1jvs0rsUWAcJVyhY5NutFs9-EUZg8MSsQ/view?usp=drivesdk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex flex-col sm:flex-row justify-between items-start sm:items-center py-0 sm:py-8 border-b border-brand-cream/30 hover:border-brand-cream transition-colors duration-300 pb-8 sm:pb-8"
@@ -135,7 +138,7 @@ export function EducationExperience() {
                     International Test Center
                   </span>
                   <span className="text-sm font-regular opacity-70">
-                    Score: 785
+                    Score: 755
                   </span>
                 </div>
               </a>

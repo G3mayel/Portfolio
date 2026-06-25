@@ -16,7 +16,7 @@ export function CapabilitiesSection() {
       <div className="grid grid-cols-1 md:grid-cols-[380px_1fr] lg:grid-cols-[380px_1fr] gap-12 md:gap-20 lg:gap-32 items-start">
         <FadeUp delay={0.2} className="w-full">
           <div className="w-full relative h-[400px] sm:h-[500px] md:h-[480px]">
-            <Image
+            <Image draggable={false}
               src="/images/profile.png"
               alt="Profile"
               fill

@@ -28,7 +28,7 @@ export function ProjectGallery({ images }: ProjectGalleryProps) {
       <FadeUp>
         <div className="w-full relative aspect-[16/10] md:aspect-[21/9] bg-gray-200 overflow-hidden">
           {images.map((img, idx) => (
-            <Image
+            <Image draggable={false}
               key={img}
               src={img}
               alt={`Gallery image ${idx + 1}`}
@@ -58,7 +58,7 @@ export function ProjectGallery({ images }: ProjectGalleryProps) {
                 }`}
                 onClick={() => setActiveIndex(idx)}
               >
-                <Image
+                <Image draggable={false}
                   src={img}
                   alt={`Gallery thumbnail ${idx + 1}`}
                   fill

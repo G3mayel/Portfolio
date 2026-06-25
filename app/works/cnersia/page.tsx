@@ -68,7 +68,7 @@ export default function CnersiaPage() {
       <section className="w-full px-6 md:px-12 mb-20 md:mb-32">
         <FadeUp delay={0.3}>
           <div className="w-full relative aspect-[16/9] md:aspect-[21/9] bg-gray-200">
-            <Image
+            <Image draggable={false}
               src="/images/cnersia.png"
               alt="CNERSIA POS Interface"
               fill

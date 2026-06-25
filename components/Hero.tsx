@@ -7,7 +7,7 @@ export function Hero() {
       <FadeUp className="flex flex-col md:flex-row justify-between items-stretch md:items-start gap-2 md:gap-0 pb-4">
         <div className="self-start pl-0 md:pl-4">
           <div className="relative text-brand-orange text-[0.8rem] sm:text-[1.25rem] font-medium leading-[1.05] inline-flex items-center justify-center px-5 py-3 md:px-8 md:py-5 text-left transform -rotate-3">
-            <Image
+            <Image draggable={false}
               src="/images/circle.svg"
               alt=""
               fill
@@ -48,7 +48,7 @@ export function Hero() {
               media="(max-width: 1023px)"
               srcSet="/images/hero-profile2.png"
             />
-            <img
+            <img draggable={false}
               src="/images/hero-profile.png"
               alt="Gemayel Abdad Rakadiansyah"
               className="w-full h-auto lg:h-[180px] object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-[1.03]"

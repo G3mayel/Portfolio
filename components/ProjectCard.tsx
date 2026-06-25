@@ -25,7 +25,7 @@ export function ProjectCard({
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           className="w-full h-full"
         >
-          <Image
+          <Image draggable={false}
             src={project.image}
             alt={project.title}
             fill

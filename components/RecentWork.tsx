@@ -128,7 +128,7 @@ export function RecentWork() {
             {works.slice(0, 3).map((work, idx) => (
               <div key={idx} className="w-full h-full shrink-0 relative">
                 {work.image && (
-                  <Image
+                  <Image draggable={false}
                     src={work.image}
                     alt={work.title}
                     fill

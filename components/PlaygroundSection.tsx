@@ -121,8 +121,8 @@ export function PlaygroundSection() {
             );
           })}
         </h1>
-        <p className="text-lg md:text-xl font-light opacity-80 max-w-2xl mt-4 pointer-events-none">
-          An experimental space for creative coding, micro-interactions, and visual explorations. Coming soon.
+        <p className="text-lg md:text-xl font-light text-brand-text/80 max-w-2xl mt-4 pointer-events-none">
+          An experimental space dedicated to exploration. From code and design to whatever captures my curiosity next. <span className="font-medium text-brand-orange">Coming Soon.</span>
         </p>
       </FadeUp>
     </section>
