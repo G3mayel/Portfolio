@@ -4,6 +4,7 @@ import { SmoothScroll } from '@/components/SmoothScroll';
 import { TransitionProvider } from '@/components/TransitionProvider';
 import { LoadingScreen } from '@/components/LoadingScreen';
 import { cookies } from 'next/headers';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: {
@@ -52,6 +53,7 @@ export default async function RootLayout({children}: {children: React.ReactNode}
           <SmoothScroll />
           {children}
         </TransitionProvider>
+        <Analytics />
       </body>
     </html>
   );
