@@ -5,6 +5,7 @@ import { TransitionProvider } from '@/components/TransitionProvider';
 import { LoadingScreen } from '@/components/LoadingScreen';
 import { cookies } from 'next/headers';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: {
@@ -54,6 +55,7 @@ export default async function RootLayout({children}: {children: React.ReactNode}
           {children}
         </TransitionProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
